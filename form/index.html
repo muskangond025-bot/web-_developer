@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h2> Full Stack Developer & Web Designer - TA Form</h2>
+        <form action="/submit" method="post">
+            <div><label for="name">Name:</label></div>
+            <div><input type="text" id="name" name="name" required placeholder="Enter your name"
+                    style="border: 2px solid;"></div>
+            <div><label for="mobile">Mobile No: </label></div>
+            <div><input type="text" id="mobile" name="mobile" required placeholder="Enter your mobile number"
+                    style="border: 2px solid;"></div>
+            <div><label for="Aadhar">Aadhar No:</label></div>
+            <div><input type="text" id="Aadhar" name="Aadhar" required placeholder="Enter your Aadhar number"
+                    style="border: 2px solid;"></div>
+            <div><label for="email">Email:</label></div>
+            <div><input type="email" id="email" name="email" required placeholder="Enter your email"
+                    style="border: 2px solid;"></div>
+            <div><label for="age">Age:</label></div>
+            <div><input type="number" id="age" name="age" required placeholder="Enter your age"
+                    style="border: 2px solid;"></div>
+            <div><label for="date of birth">Date of Birth:</label></div>
+            <div><input type="date" id="date of birth" name="date of birth" required style="border: 2px solid;"></div>
+            <div><label for="gender">Gender:</label></div>
+            <div><select id="gender" name="gender" required style="border: 2px solid;">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select></div>
+            <div><label for="address">Address:</label></div>
+            <div><input type="text" id="address" name="address" required placeholder="Enter your address"
+                    style="border: 2px solid;"></div>
+            <style>
+                input select {
+                    width: 100%;
+                }
+                .form-group {
+                    margin-bottom: 15px;
+                }
+            </style>
+            <div class="form-group">
+                <label for="education">Educational Qualification:</label>
+               <select id="education" name="education" required>
+                <option value="highschool">High School</option>
+                <option value="bachelor">Bachelor's Degree</option>
+                <option value="master">Master's Degree</option>
+                <option value="phd">PhD</option>
+               </select></div>
+            <div class="form-group">
+                <label for="course">Course Interested In:</label>
+                <select id="course" name="course" required>
+                <option value="fullstack">Full Stack Developer</option>
+                <option value="webdesign">Web Designer</option></select>
+             </div>
+            <div>
+                <small> <label for="terms">
+                <div><input type="checkbox" id="terms" name="terms" required> Note:All the terms and condititon I
+                        acceptated and I confirm all the information sumbitted true and valid.
+                </label></small>
+    </div>
+    <div class="container-2" style="text-align: center;">
+        <input type="submit" value="Submit">
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
